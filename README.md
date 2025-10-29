@@ -1,6 +1,70 @@
 # Trendy-fashion-
 3D premium e-commerce website for Trendy Fashion
-/* Trendy Fashion — 3D premium look */
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trendy Fashion — Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-wrap container">
+      <div class="brand-3d">
+        <div class="logo-face">TF</div>
+      </div>
+      <div class="brand-text">
+        <div class="brand-title">Trendy Fashion</div>
+        <div class="brand-sub">Premium • 3D • Urban</div>
+      </div>
+
+      <nav class="nav">
+        <a href="#/home">Home</a>
+        <a href="#/products">Products</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="auth-btn" class="ghost">Login</button>
+        <button id="open-cart" class="cart-btn">🛒 <span id="cart-count">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main" id="app-root">
+    <!-- app renders here -->
+  </main>
+
+  <!-- Cart Modal -->
+  <div class="cart-modal" id="cart-modal" aria-hidden="true">
+    <div class="cart-panel">
+      <button class="close" id="close-cart">✕</button>
+      <h2>Your Cart</h2>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="total">Total: ₹ <span id="cart-total">0.00</span></div>
+        <div class="cart-actions">
+          <button id="clear-cart" class="btn-outline">Clear</button>
+          <button id="go-to-checkout" class="btn-primary">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-title small">Trendy Fashion</div>
+        <div class="muted">Premium apparel, direct to you.</div>
+      </div>
+      <div class="muted">© <span id="year"></span> Trendy Fashion</div>
+      <div>Contact: +91 90000 00000</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>/* Trendy Fashion — 3D premium look */
 :root{
   --accent:#b08b4f;
   --bg:#0f1724;
@@ -450,68 +514,3 @@ function init(){
   updateCartUI();
 }
 init();
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Trendy Fashion — Shop</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="topbar">
-    <div class="brand-wrap container">
-      <div class="brand-3d">
-        <div class="logo-face">TF</div>
-      </div>
-      <div class="brand-text">
-        <div class="brand-title">Trendy Fashion</div>
-        <div class="brand-sub">Premium • 3D • Urban</div>
-      </div>
-
-      <nav class="nav">
-        <a href="#/home">Home</a>
-        <a href="#/products">Products</a>
-      </nav>
-
-      <div class="header-actions">
-        <button id="auth-btn" class="ghost">Login</button>
-        <button id="open-cart" class="cart-btn">🛒 <span id="cart-count">0</span></button>
-      </div>
-    </div>
-  </header>
-
-  <main class="container main" id="app-root">
-    <!-- app renders here -->
-  </main>
-
-  <!-- Cart Modal -->
-  <div class="cart-modal" id="cart-modal" aria-hidden="true">
-    <div class="cart-panel">
-      <button class="close" id="close-cart">✕</button>
-      <h2>Your Cart</h2>
-      <div id="cart-items" class="cart-items"></div>
-      <div class="cart-footer">
-        <div class="total">Total: ₹ <span id="cart-total">0.00</span></div>
-        <div class="cart-actions">
-          <button id="clear-cart" class="btn-outline">Clear</button>
-          <button id="go-to-checkout" class="btn-primary">Checkout</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="brand-title small">Trendy Fashion</div>
-        <div class="muted">Premium apparel, direct to you.</div>
-      </div>
-      <div class="muted">© <span id="year"></span> Trendy Fashion</div>
-      <div>Contact: +91 90000 00000</div>
-    </div>
-  </footer>
-
-  <script src="app.js"></script>
-</body>
-</html>
