@@ -1,6 +1,5 @@
 # Trendy-fashion-
 3D premium e-commerce website for Trendy Fashion
-<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -64,7 +63,7 @@
 
   <script src="app.js"></script>
 </body>
-</html>/* Trendy Fashion — 3D premium look */
+</html>
 :root{
   --accent:#b08b4f;
   --bg:#0f1724;
@@ -179,11 +178,6 @@ body{
 /* small helpers */
 .muted{color:var(--muted)}
 .small{font-size:0.95rem}
-/* Trendy Fashion — SPA single-file logic
-   - localStorage used for users, session, cart, orders
-   - Hash routing: #/home #/products #/login #/register #/checkout
-*/
-
 const ROOT = document.getElementById('app-root');
 const CART_MODAL = document.getElementById('cart-modal');
 const CART_ITEMS = document.getElementById('cart-items');
@@ -514,3 +508,11 @@ function init(){
   updateCartUI();
 }
 init();
+git init
+git add .
+git commit -m "Initial Trendy Fashion site"
+# create repo on GitHub (either via website or gh cli)
+# then set remote (replace URL with your repo)
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git branch -M main
+git push -u origin main
